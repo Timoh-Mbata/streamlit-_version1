@@ -9,7 +9,7 @@ model = jb.load(model_path)
 # columns = np.load(column_path)
 st.title('WELCOME TO CHURN PREDICTION APP')
 st.text('This are the available Regions : ')
-st.text(json_load(column_path))
+# st.text(json_load(column_path))
 region = st.number_input('ENTER THE REGION USING THERE NUMBERS')
 # allowing the user inputs :
 # MONTANT
