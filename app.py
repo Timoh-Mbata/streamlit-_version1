@@ -1,11 +1,8 @@
 import pandas as pd
 import numpy as np
 import streamlit as st
-import yfinance as yf
 import json
 import joblib as jb
-import os
-from matplotlib.font_manager import json_load
 # import the model
 model_path = r"C:\Users\user\Desktop\streamlit\streamlit-_version1\churn_model.joblib"
 model = jb.load(model_path)
