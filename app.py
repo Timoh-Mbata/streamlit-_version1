@@ -6,10 +6,13 @@ import joblib as jb
 # import the model
 model_path = 'churn_model.joblib'
 model = jb.load(model_path)
-# columns = np.load(column_path)
+columns = 'Regions'
+    
 st.title('WELCOME TO CHURN PREDICTION APP')
 st.text('This are the available Regions : ')
-# st.text(json_load(column_path))
+with open (columns,'r') as f:
+    column = json.load(f)
+st.text(column)  
 region = st.number_input('ENTER THE REGION USING THERE NUMBERS')
 # allowing the user inputs :
 # MONTANT
