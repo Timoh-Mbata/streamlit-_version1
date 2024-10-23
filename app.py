@@ -4,7 +4,8 @@ import streamlit as st
 import json
 import joblib as jb
 # import the model
-model = jb.load(churn_model.joblib)
+model_path = 'churn_model.joblib'
+model = jb.load(model_path)
 # columns = np.load(column_path)
 st.title('WELCOME TO CHURN PREDICTION APP')
 st.text('This are the available Regions : ')
